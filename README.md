@@ -258,12 +258,12 @@ La aplicación incluye pruebas unitarias para validar la lógica de negocio y lo
 - **Spring Context Test**  
   Se valida que el contexto de la aplicación cargue correctamente mediante un test básico (`contextLoads`).
 
----
-
 ### ▶️ Ejecutar pruebas
 
 ```bash
 .\mvnw.cmd test
+
+---
 
 # ☁️ Despliegue
 
