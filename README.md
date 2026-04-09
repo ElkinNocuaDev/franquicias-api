@@ -243,6 +243,28 @@ Respuesta:
 
 ---
 
+## 🧪 Pruebas unitarias
+
+La aplicación incluye pruebas unitarias para validar la lógica de negocio y los controladores REST, asegurando el correcto funcionamiento de cada capa.
+
+### Tipos de pruebas implementadas
+
+- **Service Tests (Mockito)**  
+  Se prueban los servicios de forma aislada utilizando mocks para simular dependencias como repositorios, validando la lógica de negocio sin necesidad de conexión a la base de datos.
+
+- **Controller Tests (MockMvc)**  
+  Se simulan peticiones HTTP sin levantar el servidor completo, verificando el comportamiento de los endpoints y las respuestas HTTP.
+
+- **Spring Context Test**  
+  Se valida que el contexto de la aplicación cargue correctamente mediante un test básico (`contextLoads`).
+
+---
+
+### ▶️ Ejecutar pruebas
+
+```bash
+.\mvnw.cmd test
+
 # ☁️ Despliegue
 
 La aplicación está desplegada en Railway utilizando Docker.
